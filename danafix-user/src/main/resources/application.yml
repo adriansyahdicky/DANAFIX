@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: danafix-user
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/coba?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Jakarta
+    username: root
+    password: root
+    jpa:
+      show-sql: true
+
+server:
+  port: 9990

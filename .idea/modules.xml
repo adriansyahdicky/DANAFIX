@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DANAFIX.iml" filepath="$PROJECT_DIR$/.idea/DANAFIX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/danafix-common/danafix-common.iml" filepath="$PROJECT_DIR$/danafix-common/danafix-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/danafix-gateway/danafix-gateway.iml" filepath="$PROJECT_DIR$/danafix-gateway/danafix-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/danafix-signatur/danafix-signatur.iml" filepath="$PROJECT_DIR$/danafix-signatur/danafix-signatur.iml" />
+      <module fileurl="file://$PROJECT_DIR$/danafix-user/danafix-user.iml" filepath="$PROJECT_DIR$/danafix-user/danafix-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/danaifx-registry/danaifx-registry.iml" filepath="$PROJECT_DIR$/danaifx-registry/danaifx-registry.iml" />
+    </modules>
+  </component>
+</project>

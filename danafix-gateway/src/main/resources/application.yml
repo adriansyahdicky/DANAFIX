@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: danafix-gateway
+
+server:
+  port: 10000
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  eureka:
+    enabled: true
+
+zuul:
+  add-host-header: true
+  sensitive-headers:
+  host:
+    connect-timeout-millis: 5000000
+    socket-timeout-millis: 5000000
+  ignoredServices: '*'
+  routes:
+    danafix-user:
+      path: /users/**
+      serviceId: danafix-user
+      stripPrefix: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystix.stream
+
+#url yang diizinkan tanpa token
+
+filter:
+  ignores:
+    - /users/api/user/register
+    - /users/api/user/login
